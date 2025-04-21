@@ -20,6 +20,24 @@ footer {
     text-align: center;
     padding: 10px;
 }
+/* Estilos para dispositivos móviles */
+body {
+    font-size: 16px;
+}
+
+/* Media query para tabletas */
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Media query para computadoras de escritorio */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+}
 
 /* Fondo general para la página */
 /* Estilos generales para la navegación */
@@ -35,6 +53,7 @@ header {
     margin: auto;
     padding: 10px;
 }
+
 
 /* Estilos para la imagen del logo */
 nav img {
@@ -107,5 +126,70 @@ h1 {
     font-size: 16px;
     line-height: 1.6;
 }
+
+/* Carrusel sin scroll y adaptado a pantalla */
+.carousel-item img {
+    max-height: 60vh;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+}
+
+.carousel-item {
+    text-align: center;
+    padding: 20px;
+}
+
+#carruselProductos {
+    max-height: 70vh;
+    overflow: hidden;
+}
+
+main {
+    overflow: hidden;
+}
+
+/* Permitir scroll normal (por defecto) */
+.scroll-pageInicio main{
+    overflow-y: auto; 
+  }
+
+body {
+    overflow-x: hidden;
+}
+
+ /* Ajustes visuales del carrusel */
+ .carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .carousel-item p {
+    font-size: 18px;
+    color: #333;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+    font-size: 18px;
+  }
+
+  nav a:hover {
+    color: #ffcc00;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  
+
 
 

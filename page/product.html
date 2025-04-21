@@ -1,92 +1,124 @@
-<!-- pages/productos.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Productos - Tiendas Maby</title>
-    <link rel="stylesheet" href=" ../css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Productos - Tiendas Maby</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="conteinernav">
-        <header>
-            <nav>
-                <img src="../img/fotocontacto.avif">
-                <a href="inicio.html">Inicio</a>
-                <a href="product.html">Productos</a>
-                <a href="myhistory.html">Mi historia</a>
-                <a href="contact.html">Contacto</a>
-            </nav>
-        </header>
-    </div>
-    
-    <main>
-        <div class="categorias">
-            <h1>Nuestros Productos</h1>
-            
-            <button onclick="mostrarCategoria('mujer')">Mujer</button>
-            <button onclick="mostrarCategoria('hombre')">Hombre</button>
-            <button onclick="mostrarCategoria('niños')">Niños</button>
-            <button onclick="mostrarCategoria('calzado')">Calzado</button>
-            <button onclick="mostrarCategoria('accesorios')">Accesorios</button>
-            <button onclick="mostrarCategoria('ropainterior')">Ropa Interior</button>
-        </div>
-    
-        <div id="vistaCategoria">
-            <section id="mujer">
-                <div class="producto"><img src="../img/PROMUJER1.jpg" alt="Mujer 1"><p>Producto 1 de Mujer</p></div>
-                <div class="producto"><img src="../img/PROMUJER2.jpg" alt="Mujer 2"><p>Producto 2 de Mujer</p></div>
-            </section>
-    
-            <section id="hombre">
-                <div class="producto"><img src="../img/HOMBRE1.jpg" alt="Hombre 1"><p>Producto 1 de Hombre</p></div>
-                <div class="producto"><img src="../img/HOMBRE2.png" alt="Hombre 2"><p>Producto 2 de Hombre</p></div>
-                <div class="producto"><img src="../img/HOMBRE4.png" alt="Hombre 3"><p>Producto 3 de Hombre</p></div>
-                <div class="producto"><img src="../img/HOMBRE5.webp" alt="Hombre 4"><p>Producto 4 de Hombre</p></div>
-                <div class="producto"><img src="../img/HOMBRE6.webp" alt="Hombre 5"><p>Producto 5 de Hombre</p></div>
-                <div class="producto"><img src="../img/HOMBRE7.jpg" alt="Hombre 5"><p>Producto 5 de Hombre</p></div>
-            </section>
-    
-            <section id="niños">
-                <div class="producto"><img src="../img/BOMBANENA.webp" alt="Niños 1"><p>Producto 1 de Niños</p></div>
-                <div class="producto"><img src="../img/BOXERNIÑO.jpeg" alt="Niños 2"><p>Producto 2 de Niños</p></div>
-                <div class="producto"><img src="../img/CALSONNIÑO.jpg" alt="Niños 3"><p>Producto 3 de Niños</p></div>
-            </section>
-    
-            <section id="calzado">
-                <h3>Calzado</h3>
-                <div class="producto"><img src="../img/CALZADO1.jpg" alt="Niños 1"><p>Producto 1 de Niños</p></div>
-                <div class="producto"><img src="../img/CALZADO3.webp" alt="Niños 2"><p>Producto 2 de Niños</p></div>
-                <div class="producto"><img src="../img/CALZASO4.jpg" alt="Niños 3"><p>Producto 3 de Niños</p></div>
-                <div class="producto"><img src="../img/CAÑZADO2.jpg" alt="Niños 4"><p>Producto 4 de Niños</p></div>
-            </section>
-    
-            <section id="ropa interior">
-                <div class="producto"><img src="../img/MEDIAS.jpg" alt="Niños 1"><p>Producto 1 de Niños</p></div>
-                <div class="producto"><img src="../img/MEDIASALTAS.jpg" alt="Niños 2"><p>Producto 2 de Niños</p></div>
-                <div class="producto"><img src="../img/MEDIASBEBE.jpg" alt="Niños 3"><p>Producto 3 de Niños</p></div>
-                <div class="producto"><img src="../img/MEDIASNENES.webp" alt="Niños 4"><p>Producto 4 de Niños</p></div>
-                <div class="producto"><img src="../img/BOMBANENA.webp" alt="Niños 4"><p>Producto 4 de Niños</p></div>
-                <div class="producto"><img src="../img/BOXERNIÑO.jpeg" alt="Niños 4"><p>Producto 4 de Niños</p></div>
-                <div class="producto"><img src="../img/CALSONNIÑO.jpg" alt="Niños 4"><p>Producto 4 de Niños</p></div>
-            </section>
-    
-            <section id="accesorios">
-                 <div class="producto"><img src="../img/PRODACCES1.webp" alt="Niños 1"><p>Producto 1 de Niños</p></div>
-                <div class="producto"><img src="../img/PRODACES2.jpg" alt="Niños 2"><p>Producto 2 de Niños</p></div>
-                <div class="producto"><img src="../img/PRODACCE3.jpg" alt="Niños 3"><p>Producto 3 de Niños</p></div>
-                <div class="producto"><img src="../img/PRODACES4.jpg" alt="Niños 4"><p>Producto 4 de Niños</p></div>
-            </section>
-        </div>
-    </main>
+  <div class="conteinernav">
+    <header>
+      <nav class="d-flex align-items-center p-2">
+        <img src="../img/fotocontacto.avif" alt="Logo">
+        <a href="inicio.html">Inicio</a>
+        <a href="product.html">Productos</a>
+        <a href="myhistory.html">Mi historia</a>
+        <a href="contact.html">Contacto</a>
+      </nav>
+    </header>
+  </div>
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 Tiendas Maby. Todos los derechos reservados.</p>
+  <main>
+    <div class="categorias text-center my-4">
+      <h1>Nuestros Productos</h1>
+      <button class="btn btn-outline-primary me-2" onclick="mostrarCategoria('mujer')">Mujer</button>
+      <button class="btn btn-outline-primary me-2" onclick="mostrarCategoria('hombre')">Hombre</button>
+      <button class="btn btn-outline-primary me-2" onclick="mostrarCategoria('ninos')">Niños</button>
+      <button class="btn btn-outline-primary me-2" onclick="mostrarCategoria('calzado')">Calzado</button>
+      <button class="btn btn-outline-primary me-2" onclick="mostrarCategoria('accesorios')">Accesorios</button>
+      <button class="btn btn-outline-primary me-2" onclick="mostrarCategoria('ropainterior')">Ropa Interior</button>
+    </div>
+
+    <div class="container mb-5">
+      <div id="carruselProductos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" id="carousel-inner">
+          <!-- Las imágenes se insertan con JavaScript -->
         </div>
-    </footer>
-   
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselProductos" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselProductos" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center p-3">
+    <p>&copy; 2025 Tiendas Maby. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script para el carrusel dinámico -->
+  <script>
+    const productos = {
+      mujer: [
+        { img: "../img/PROMUJER1.jpg", texto: "Producto 1 de Mujer" },
+        { img: "../img/PROMUJER2.jpg", texto: "Producto 2 de Mujer" },
+      ],
+      hombre: [
+        { img: "../img/HOMBRE1.jpg", texto: "Producto 1 de Hombre" },
+        { img: "../img/HOMBRE2.png", texto: "Producto 2 de Hombre" },
+        { img: "../img/HOMBRE4.png", texto: "Producto 3 de Hombre" },
+        { img: "../img/HOMBRE5.webp", texto: "Producto 4 de Hombre" },
+        { img: "../img/HOMBRE6.webp", texto: "Producto 5 de Hombre" },
+        { img: "../img/HOMBRE7.jpg", texto: "Producto 6 de Hombre" },
+      ],
+      ninos: [
+        { img: "../img/BOMBANENA.webp", texto: "Producto 1 de Niños" },
+        { img: "../img/BOXERNIÑO.jpeg", texto: "Producto 2 de Niños" },
+        { img: "../img/CALSONNIÑO.jpg", texto: "Producto 3 de Niños" },
+      ],
+      calzado: [
+        { img: "../img/CALZADO1.jpg", texto: "Producto 1 de Calzado" },
+        { img: "../img/CALZADO3.webp", texto: "Producto 2 de Calzado" },
+        { img: "../img/CALZASO4.jpg", texto: "Producto 3 de Calzado" },
+        { img: "../img/CAÑZADO2.jpg", texto: "Producto 4 de Calzado" },
+      ],
+      ropainterior: [
+        { img: "../img/MEDIAS.jpg", texto: "Producto 1 de Ropa Interior" },
+        { img: "../img/MEDIASALTAS.jpg", texto: "Producto 2 de Ropa Interior" },
+        { img: "../img/MEDIASBEBE.jpg", texto: "Producto 3 de Ropa Interior" },
+        { img: "../img/MEDIASNENES.webp", texto: "Producto 4 de Ropa Interior" },
+        { img: "../img/BOMBANENA.webp", texto: "Producto 5 de Ropa Interior" },
+        { img: "../img/BOXERNIÑO.jpeg", texto: "Producto 6 de Ropa Interior" },
+        { img: "../img/CALSONNIÑO.jpg", texto: "Producto 7 de Ropa Interior" },
+      ],
+      accesorios: [
+        { img: "../img/PRODACCES1.webp", texto: "Producto 1 de Accesorios" },
+        { img: "../img/PRODACES2.jpg", texto: "Producto 2 de Accesorios" },
+        { img: "../img/PRODACCE3.jpg", texto: "Producto 3 de Accesorios" },
+        { img: "../img/PRODACES4.jpg", texto: "Producto 4 de Accesorios" },
+      ]
+    };
+
+    function mostrarCategoria(categoria) {
+      const container = document.getElementById("carousel-inner");
+      container.innerHTML = "";
+
+      productos[categoria].forEach((producto, index) => {
+        const activeClass = index === 0 ? "active" : "";
+        container.innerHTML += `
+          <div class="carousel-item ${activeClass}">
+            <div class="d-flex flex-column align-items-center">
+              <img src="${producto.img}" class="d-block" alt="${producto.texto}">
+              <p class="mt-3">${producto.texto}</p>
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      mostrarCategoria("mujer");
+    });
+  </script>
 </body>
 </html>
