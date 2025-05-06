@@ -53,7 +53,10 @@ header {
     margin: auto;
     padding: 10px;
 }
-
+nav {
+    display: flex;
+    align-items: center;
+  }
 
 /* Estilos para la imagen del logo */
 nav img {
@@ -172,23 +175,7 @@ body {
     color: #333;
   }
 
-  nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    transition: color 0.3s;
-    font-size: 18px;
-  }
-
-  nav a:hover {
-    color: #ffcc00;
-  }
-
-  nav {
-    display: flex;
-    align-items: center;
-  }
-
+ 
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     background-color: rgba(0, 0, 0, 0.5); /* fondo oscuro translúcido */

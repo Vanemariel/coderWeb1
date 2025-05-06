@@ -1,0 +1,15 @@
+
+body {
+    font-family: $fuente-principal;
+    background-color: $color-fondo;
+    font-size: $tamano-base;
+    overflow-x: hidden;
+  }
+
+
+/* Título principal */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+}
