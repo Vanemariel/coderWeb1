@@ -6,3 +6,14 @@
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/main';
+
+// pages
+@use 'pages/home';
+
+// Components
+@use 'components/navbar';
+@use 'components/carousel';
+
+// Abstracts
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
