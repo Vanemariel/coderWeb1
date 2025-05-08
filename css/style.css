@@ -193,6 +193,25 @@ body {
   }
   
   
-
+  .titulo-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el título y el logo */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    margin-bottom: 20px; /* Espacio inferior */
+  }
+  
+  .titulo-logo h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .logoMabel {
+    width: 300px; /* 150px / 5 */
+    height: auto; /* Mantiene la proporción original */
+    display: inline-block;
+    object-fit: contain;
+  }
+  
 
 

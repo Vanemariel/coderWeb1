@@ -1,0 +1,24 @@
+.titulo-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem; // Espacio entre el título y el logo
+    margin: 0.25rem 0; // Márgenes superior e inferior reducidos
+    padding: 0.25rem 0; // Relleno superior e inferior reducido
+  }
+  
+  .titulo-logo h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.25rem; // Ajusta el tamaño según tus necesidades
+  }
+  
+  .logoMabel {
+    width: 300px; /* 150px / 5 */
+    height: auto; /* Mantiene la proporción original */
+    display: inline-block;
+    object-fit: contain;
+  }
+
+
+  
