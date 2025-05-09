@@ -1,14 +1,14 @@
 // Base
-@import 'base/reset';
-@import 'base/typography';
+@use 'base/reset';
+@use 'base/typography';
 
 // Layout
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/main';
+@use 'layout/footer';
+@use 'layout/header';
+@use 'layout/main';
 
 // pages
-@use 'pages/home';
+@use 'page/home';
 
 // Components
 @use 'components/navbar';
@@ -16,5 +16,5 @@
 @use 'components/logo';
 
 // Abstracts
-@use 'abstracts/variables';
-@use 'abstracts/mixins';
+@use 'abstract/mixins';
+@use 'abstract/variables';

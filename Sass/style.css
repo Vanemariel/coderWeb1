@@ -1,0 +1,164 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav img {
+  height: 50px;
+  margin-left: 20px;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+header nav a:hover {
+  color: #ffcc00;
+}
+
+main {
+  flex: 1; /* hace que el main ocupe todo el espacio disponible */
+}
+
+.collage {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../img/bienvenida.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagenes {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+.imagenes img {
+  width: 80%;
+  max-width: 400px;
+  max-height: 300px;
+  height: auto;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.imagenes p {
+  max-width: 600px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.datos-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.conteinernav {
+  background-color: #333;
+}
+
+.carousel-item {
+  text-align: center;
+  padding: 20px;
+}
+.carousel-item img {
+  max-height: 400px;
+  width: auto;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+}
+.carousel-item p {
+  font-size: 18px;
+  color: #333;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.titulo-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  margin-bottom: 20px;
+}
+.titulo-logo h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+.titulo-logo .logoMabel {
+  width: 200px; /* 150px / 5 */
+  height: auto; /* Mantiene la proporción original */
+  display: inline-block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  animation: rebotar 2s 1s infinite;
+}
+
+@keyframes rebotar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=style.css.map */
