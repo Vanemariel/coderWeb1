@@ -207,11 +207,40 @@ body {
   }
   
   .logoMabel {
-    width: 300px; /* 150px / 5 */
+    width: 200px; /* 150px / 5 */
     height: auto; /* Mantiene la proporción original */
     display: inline-block;
     object-fit: contain;
+    animation: rebotar 2s 1s infinite;
   }
   
+  @keyframes rebotar {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .imagenes {
+    animation: fadeInUp 1s ease forwards;
+    animation-fill-mode: both;
+    will-change: transform;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 
