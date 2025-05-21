@@ -61,46 +61,43 @@
   <script>
     const productos = {
       mujer: [
-        { img: "../img/PROMUJER1.jpg", texto: "Producto 1 de Mujer" },
-        { img: "../img/PROMUJER2.jpg", texto: "Producto 2 de Mujer" },
+        { img: "../img/PROMUJER1.jpg" },
+        { img: "../img/PROMUJER2.jpg" }
       ],
       hombre: [
-        { img: "../img/HOMBRE1.jpg", texto: "Producto 1 de Hombre" },
-        { img: "../img/HOMBRE2.png", texto: "Producto 2 de Hombre" },
-        { img: "../img/HOMBRE4.png", texto: "Producto 3 de Hombre" },
-        { img: "../img/HOMBRE5.webp", texto: "Producto 4 de Hombre" },
-        { img: "../img/HOMBRE6.webp", texto: "Producto 5 de Hombre" },
-        { img: "../img/HOMBRE7.jpg", texto: "Producto 6 de Hombre" },
+        { img: "../img/HOMBRE1.jpg" },
+        { img: "../img/HOMBRE2.png" },
+        { img: "../img/HOMBRE4.png" },
+        { img: "../img/HOMBRE5.webp" },
+        { img: "../img/HOMBRE6.webp" },
+        { img: "../img/HOMBRE7.jpg" }
       ],
       ninos: [
-        { img: "../img/BOMBANENA.webp", texto: "Producto 1 de Niños" },
-        { img: "../img/BOXERNIÑO.jpeg", texto: "Producto 2 de Niños" },
-        { img: "../img/CALSONNIÑO.jpg", texto: "Producto 3 de Niños" },
+        { img: "../img/BOMBANENA.webp" },
+        { img: "../img/BOXERNIÑO.jpeg" },
+        { img: "../img/CALSONNIÑO.jpg" }
       ],
       calzado: [
-        { img: "../img/CALZADO1.jpg", texto: "Producto 1 de Calzado" },
-        { img: "../img/CALZADO3.webp", texto: "Producto 2 de Calzado" },
-        { img: "../img/CALZASO4.jpg", texto: "Producto 3 de Calzado" },
-        { img: "../img/CAÑZADO2.jpg", texto: "Producto 4 de Calzado" },
+        { img: "../img/CALZADO1.jpg" },
+        { img: "../img/CALZADO3.webp" },
+        { img: "../img/CALZASO4.jpg" },
+        { img: "../img/CAÑZADO2.jpg" }
       ],
       ropainterior: [
-        { img: "../img/MEDIAS.jpg", texto: "Producto 1 de Ropa Interior" },
-        { img: "../img/MEDIASALTAS.jpg", texto: "Producto 2 de Ropa Interior" },
-        { img: "../img/MEDIASBEBE.jpg", texto: "Producto 3 de Ropa Interior" },
-        { img: "../img/MEDIASNENES.webp", texto: "Producto 4 de Ropa Interior" },
-        { img: "../img/BOMBANENA.webp", texto: "Producto 5 de Ropa Interior" },
-        { img: "../img/BOXERNIÑO.jpeg", texto: "Producto 6 de Ropa Interior" },
-        { img: "../img/CALSONNIÑO.jpg", texto: "Producto 7 de Ropa Interior" },
+        { img: "../img/MEDIAS.jpg" },
+        { img: "../img/MEDIASALTAS.jpg" },
+        { img: "../img/MEDIASBEBE.jpg" },
+        { img: "../img/MEDIASNENES.webp" },
+        { img: "../img/BOXERNIÑO.jpeg" },
+        { img: "../img/CALSONNIÑO.jpg" }
       ],
       accesorios: [
-        { img: "../img/PRODACCES1.webp", texto: "Producto 1 de Accesorios" },
-        { img: "../img/PRODACES2.jpg", texto: "Producto 2 de Accesorios" },
-        { img: "../img/PRODACCE3.jpg", texto: "Producto 3 de Accesorios" },
-        { img: "../img/PRODACES4.jpg", texto: "Producto 4 de Accesorios" },
+        { img: "../img/PRODACCES1.webp" },
+        { img: "../img/PRODACES2.jpg" },
+        { img: "../img/PRODACCE3.jpg" },
+        { img: "../img/PRODACES4.jpg" }
       ]
     };
-
-    /*Aplicacion de funcion del lenguahe javascrip*/
 
     function mostrarCategoria(categoria) {
       const container = document.getElementById("carousel-inner");
@@ -111,8 +108,7 @@
         container.innerHTML += `
           <div class="carousel-item ${activeClass}">
             <div class="d-flex flex-column align-items-center">
-              <img src="${producto.img}" class="d-block" alt="${producto.texto}">
-              <p class="mt-3">${producto.texto}</p>
+              <img src="${producto.img}" class="d-block" alt="">
             </div>
           </div>
         `;
