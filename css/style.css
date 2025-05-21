@@ -150,9 +150,9 @@ h1 {
     overflow: hidden;
 }
 
-main {
+/* main {
     overflow: hidden;
-}
+} */
 
 /* Permitir scroll normal (por defecto) */
 .scroll-pageInicio main{
@@ -242,5 +242,17 @@ body {
       transform: translateY(0);
     }
   }
-
+.form-group {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .form-group label {
+      font-weight: bold;
+      width: 30%;
+    }
+    .form-group p {
+      margin: 0;
+      width: 65%;
+    }
 
